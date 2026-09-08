@@ -9,8 +9,13 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     PORT: int = 8001
     LOG_LEVEL: str = "INFO"
+    # MongoDB Config
+
+    MONGODB_URL: str = "mongodb+srv://shopee-sentiment:MChau2506@cluster0.qlbix.mongodb.net/quality"
+    MONGODB_DB_NAME: str = "quality"
 
     # Elasticsearch
+
     ELASTICSEARCH_ENABLED: bool = False
     ELASTICSEARCH_HOSTS: str = "http://localhost:9200"
     ELASTICSEARCH_INDEX: str = "typo_dictionary"
@@ -20,6 +25,8 @@ class Settings(BaseSettings):
     IT_MODEL_PATH: str = "app/models/saved/it_classifier.pkl"
     IT_VECTORIZER_PATH: str = "app/models/saved/it_vectorizer.pkl"
     TOXIC_MODEL_PATH: str = "app/models/saved/toxic_classifier.bin"
+    TOXIC_PKL_MODEL_PATH: str = "app/models/saved/toxic_classifier.pkl"
+    TOXIC_PKL_VECTORIZER_PATH: str = "app/models/saved/toxic_vectorizer.pkl"
 
     # Thresholds
     IT_THRESHOLD: float = 0.60
