@@ -16,6 +16,28 @@ class ITDomainClassifier:
         self.model = None
         self.vectorizer = None
         self.loaded = False
+        self.it_keywords = set()
+        self.load_keywords()
+
+    def load_keywords(self):
+        """
+        Nạp danh sách từ khóa IT linh hoạt từ file JSON cấu hình dynamic.
+        """
+        from pathlib import Path
+        import json
+        json_path = Path(__file__).parent.parent / "dictionaries" / "it_keywords.json"
+        if json_path.exists():
+            try:
+                with open(json_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        self.it_keywords = set(data)
+                        logger.info(f"Loaded {len(self.it_keywords)} dynamic IT keywords from {json_path.name}")
+                        return
+            except Exception as e:
+                logger.error(f"Error loading dynamic IT keywords: {e}")
+
+        # Fallback từ khóa mặc định nếu chưa nạp được JSON
         self.it_keywords = {
             "python", "javascript", "react", "vue", "angular", "dotnet", "c#", "java", "golang",
             "docker", "kubernetes", "api", "fastapi", "backend", "frontend", "database", "sql",
@@ -38,30 +60,61 @@ class ITDomainClassifier:
             logger.info("IT Classifier model files not found. Using Heuristic Keyword Fallback Classifier.")
             self.loaded = False
 
+    def count_it_keywords(self, text: str) -> int:
+        text_lower = text.lower()
+        hits = 0
+        for kw in self.it_keywords:
+            # Ngăn chặn khớp nhầm từ ngắn (VD: 'ai' khớp trong 'hai', 'ml' trong 'làm', 'c#'...)
+            if len(kw) <= 3:
+                pattern = r"\b" + re.escape(kw) + r"\b"
+                if re.search(pattern, text_lower):
+                    hits += 1
+            else:
+                if kw in text_lower:
+                    hits += 1
+        return hits
+
     def predict(self, text: str) -> Tuple[bool, float]:
         """
         Dự đoán bài viết có thuộc IT domain hay không.
         Trả về (is_it, probability).
         """
+        keyword_hits = self.count_it_keywords(text)
+
         if self.loaded and self.model and self.vectorizer:
             try:
-                X_vector = self.vectorizer.transform([text])
+                from app.pipeline.tokenizer import VietnameseTokenizer
+                tokenizer = VietnameseTokenizer()
+                tokenized_text = tokenizer.tokenize(text)
+                X_vector = self.vectorizer.transform([tokenized_text])
                 prob = float(self.model.predict_proba(X_vector)[0][1])
+
+                # Kết hợp xác suất ML và Keyword Hits linh hoạt:
+                if keyword_hits >= 2:
+                    prob = max(prob, 0.85)
+                elif keyword_hits >= 1:
+                    prob = max(prob, 0.65)
+                elif prob < 0.40 and keyword_hits == 0:
+                    # Chỉ giảm xác suất nếu ML rất không chắc chắn (< 0.40) và hoàn toàn không có từ khóa
+                    prob = min(prob, 0.25)
+
                 is_it = prob >= settings.IT_THRESHOLD
-                return is_it, prob
+                return is_it, round(prob, 4)
             except Exception as e:
                 logger.error(f"Error during ML IT classification inference: {e}")
 
         # Fallback Heuristic
         text_lower = text.lower()
-        keyword_hits = sum(1 for kw in self.it_keywords if kw in text_lower)
         word_count = max(len(text_lower.split()), 1)
         density = keyword_hits / min(word_count, 100)
 
         # Tính xác suất sơ bộ dựa trên mật độ từ khóa IT
-        prob = min(0.35 + (keyword_hits * 0.15) + (density * 2.0), 0.98)
         if keyword_hits == 0:
-            prob = 0.20
+            prob = 0.15
+        elif keyword_hits == 1:
+            prob = 0.45
+        else:
+            prob = min(0.60 + (keyword_hits * 0.10) + (density * 1.5), 0.98)
 
         is_it = prob >= settings.IT_THRESHOLD
         return is_it, round(prob, 4)
