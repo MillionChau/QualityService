@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "train_01044",
+    "text": "Note nhanh vài điều về đầu tư chứng khoán để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_01227",
+    "text": "Đang tìm hiểu về mock dependency trong Jest, có ai có tài liệu tham khảo không?",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_02122",
+    "text": "Mình mới thử quản lý hạ tầng với Terraform, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_02146",
+    "text": "Ức chế với Khóa học online, đặt hàng cả tuần không thấy đâu, hỏi thì thái độ như con nợ hỏi nợ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_02268",
+    "text": "Dạo này mình đang tìm hiểu về chọn balo phù hợp cho chuyến đi công tác, có ai biết không chia sẻ giúp mình.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_02855",
+    "text": "Ai biết cách lazy loading hình ảnh không chỉ mình với, đang gấp lắm ạ.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_03029",
+    "text": "Vài ghi chú nhanh về đóng gói ứng dụng bằng container, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_04119",
+    "text": "Tóm tắt ngắn gọn về pattern matching để sau này xem lại.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_04700",
+    "text": "Tóm tắt ngắn gọn về thiết kế schema MongoDB để sau này xem lại.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_05575",
+    "text": "Chia sẻ kinh nghiệm chuyên sâu về mẹo nấu ăn nhanh sau nhiều năm tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_06370",
+    "text": "Cảnh báo: Trung tâm ngoại ngữ làm ăn gian dối, thái độ vô văn hóa với khách. Đừng ai dại mà mua nhé.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_06623",
+    "text": "Giới thiệu tổng quan về xây dựng pipeline dữ liệu cho ML và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_07116",
+    "text": "Bài viết đi sâu vào thiết kế design system, so sánh nhiều giải pháp và chỉ ra ưu nhược điểm của từng cách tiếp cận.\n```javascript\nexport const useDebounce = (value, delay) => {\n  const [debounced, setDebounced] = useState(value);\n  useEffect(() => {\n    const t = setTimeout(() => setDebounced(value), delay);\n    return () => clearTimeout(t);\n  }, [value, delay]);\n  return debounced;\n};\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_07290",
+    "text": "Tổng hợp thông tin cơ bản về review phim dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_08518",
+    "text": "Cách triển khai Kubernetes cluster cho một ứng dụng thực tế, kèm lưu ý về hiệu năng và bảo mật.\n```bash\ndocker build -t myapp:latest .\ndocker run -p 8080:8080 myapp:latest\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_09371",
+    "text": "Review nhanh về thói quen buổi sáng, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_09671",
+    "text": "Hướng dẫn chi tiết về trang trí nhà cửa. Thông tin này chỉ mang tính tham khảo.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_09836",
+    "text": "Phân tích chi tiết về ẩm thực vùng miền, chia sẻ kinh nghiệm thực tế hữu ích cho người quan tâm.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_10119",
+    "text": "Có ai làm viết custom hook trong React chưa, chỉ mình cách fix lỗi với, cảm ơn nhiều.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_12095",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi đóng gói ứng dụng bằng container, kèm đoạn code minh họa và giải thích từng bước.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_12409",
+    "text": "Một vài kinh nghiệm về thói quen sống lành mạnh muốn chia sẻ với mọi người.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_12729",
+    "text": "Ai biết cách list comprehension trong Python không chỉ mình với, đang gấp lắm ạ.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_12969",
+    "text": "Sàn thương mại điện tử lừa đảo khách hàng trắng trợn, dm bọn mất dạy. Cần tẩy chay ngay!",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_13301",
+    "text": "Bài viết đi sâu vào kiểm thử end-to-end với Cypress, so sánh nhiều giải pháp và chỉ ra ưu nhược điểm của từng cách tiếp cận.\n```javascript\nexport const useDebounce = (value, delay) => {\n  const [debounced, setDebounced] = useState(value);\n  useEffect(() => {\n    const t = setTimeout(() => setDebounced(value), delay);\n    return () => clearTimeout(t);\n  }, [value, delay]);\n  return debounced;\n};\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_13533",
+    "text": "Hướng dẫn cơ bản để đa luồng (multithreading), phù hợp cho người mới bắt đầu tìm hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_14868",
+    "text": "Review nhanh về SEA Games, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_15110",
+    "text": "Tránh xa Dịch vụ sửa chữa điện lạnh ra, lừa đảo trắng trợn, report ngay kẻo mất tiền oan.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_15543",
+    "text": "Bực mình vcl với Dịch vụ vận chuyển, giao hàng trễ còn cãi cùn, dm thái độ vậy mà cũng làm dịch vụ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_17542",
+    "text": "Review nhanh về mua bảo hiểm nhân thọ, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_20532",
+    "text": "Review nhanh về lãi suất vay mua nhà, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_20605",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi quản lý dependency injection, kèm đoạn code minh họa và giải thích từng bước.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_20796",
+    "text": "Cảnh báo: Khóa học online làm ăn gian dối, thái độ vô văn hóa với khách. Đừng ai dại mà mua nhé.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_20830",
+    "text": "Vài ghi chú nhanh về bảo mật API endpoint, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_22016",
+    "text": "Note nhanh vài điều về lời khuyên cuộc sống để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_22110",
+    "text": "Tránh xa Quán ăn XYZ ra, lừa đảo trắng trợn, report ngay kẻo mất tiền oan.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_22292",
+    "text": "Note nhanh vài điều về không gian sống xanh để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_23351",
+    "text": "Cách áp dụng design pattern Factory cho một ứng dụng thực tế, kèm lưu ý về hiệu năng và bảo mật.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_24172",
+    "text": "App vay tiền online toàn seeder ảo lừa đảo, dm mất tiền oan mà còn bị chửi ngược lại.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_24451",
+    "text": "Phân tích chi tiết giám sát log bảo mật: nguyên lý hoạt động, cạm bẫy thường gặp và cách khắc phục.\n```yaml\nversion: '3'\nservices:\n  web:\n    image: myapp:latest\n    ports:\n      - \"8080:8080\"\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_24516",
+    "text": "Bực mình vcl với Dịch vụ vận chuyển, giao hàng trễ còn cãi cùn, dm thái độ vậy mà cũng làm dịch vụ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_24756",
+    "text": "Hướng dẫn viết middleware xác thực. Phân tích cách triển khai và các lỗi thường gặp.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_24945",
+    "text": "Đang tìm hiểu về quản lý bộ nhớ trong C#, có ai có tài liệu tham khảo không?",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_25303",
+    "text": "Ức chế với Khóa học online, đặt hàng cả tuần không thấy đâu, hỏi thì thái độ như con nợ hỏi nợ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_25495",
+    "text": "Hướng dẫn chi tiết về đánh giá chất lượng sản phẩm. Thông tin này chỉ mang tính tham khảo.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_26278",
+    "text": "Tổng hợp các bước để chuẩn hóa dữ liệu quan hệ, kèm ví dụ minh họa dễ hiểu.\n```python\ndef fibonacci(n):\n    return n if n < 2 else fibonacci(n-1) + fibonacci(n-2)\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_26726",
+    "text": "Bài viết tổng hợp đầy đủ về đánh giá chất lượng sản phẩm, kèm những lưu ý quan trọng cần biết.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_27016",
+    "text": "Ghi chú lại vài suy nghĩ về mẹo mua hàng tiết kiệm.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_27031",
+    "text": "Dạo này mình đang tìm hiểu về review sản phẩm điện tử, có ai biết không chia sẻ giúp mình.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_28319",
+    "text": "Vài dòng chia sẻ ngắn gọn về quỹ mở.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_28601",
+    "text": "Chia sẻ kinh nghiệm chuyên sâu về ẩm thực vùng miền sau nhiều năm tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_28989",
+    "text": "Review nhanh về chuyện vặt trong ngày, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_29488",
+    "text": "Tổng hợp toàn diện về xử lý webhook, từ lý thuyết nền tảng đến ví dụ triển khai thực tế.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_29645",
+    "text": "Hướng dẫn quản lý bộ nhớ trong C#. Phân tích cách triển khai và các lỗi thường gặp.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_29661",
+    "text": "Hướng dẫn cơ bản để đo code coverage, phù hợp cho người mới bắt đầu tìm hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_29941",
+    "text": "Note nhanh vài điều về review phim để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_30105",
+    "text": "Cách zero-downtime deployment cho một ứng dụng thực tế, kèm lưu ý về hiệu năng và bảo mật.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_30205",
+    "text": "Một số kinh nghiệm khi dùng Redis để caching mà mình rút ra được sau vài dự án gần đây.\n```python\nclass Repository:\n    def __init__(self, db):\n        self.db = db\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_32101",
+    "text": "Tổng hợp thông tin cơ bản về khám phá địa điểm mới dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_32410",
+    "text": "Đại lý vé máy bay lừa đảo khách hàng trắng trợn, dm bọn mất dạy. Cần tẩy chay ngay!",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_33795",
+    "text": "Vài ghi chú nhanh về list comprehension trong Python, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_34391",
+    "text": "Note lại vài điều cần nhớ khi chạy background job với Celery.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_35094",
+    "text": "Mình mới thử tối ưu Core Web Vitals, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_35394",
+    "text": "Giới thiệu tổng quan về embedding và vector search và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_35519",
+    "text": "Bài viết đi sâu vào so sánh SQL và NoSQL, so sánh nhiều giải pháp và chỉ ra ưu nhược điểm của từng cách tiếp cận.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_35858",
+    "text": "Tổng hợp thông tin cơ bản về chuyện gia đình dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_36445",
+    "text": "Note nhanh vài điều về review sản phẩm điện tử để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_36480",
+    "text": "Note nhanh vài điều về phim điện ảnh mới ra mắt để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_37654",
+    "text": "Dạo này mình đang tìm hiểu về đồ uống healthy, có ai biết không chia sẻ giúp mình.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_39206",
+    "text": "Phân tích chi tiết về đội tuyển quốc gia, chia sẻ kinh nghiệm thực tế hữu ích cho người quan tâm.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_39227",
+    "text": "Review nhanh về chăm sóc sức khỏe tinh thần, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_39475",
+    "text": "Ai biết cách đánh giá độ chính xác mô hình không chỉ mình với, đang gấp lắm ạ.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_39692",
+    "text": "Vài dòng chia sẻ ngắn gọn về đầu tư vàng.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_39716",
+    "text": "Một số kinh nghiệm khi áp dụng CQRS trong hệ thống mà mình rút ra được sau vài dự án gần đây.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_40483",
+    "text": "Review nhanh về tâm trạng hôm nay, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_40590",
+    "text": "Vài gợi ý hữu ích xoay quanh đồ uống healthy cho mọi người tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_41512",
+    "text": "Một số kinh nghiệm khi quản lý JWT an toàn mà mình rút ra được sau vài dự án gần đây.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_42005",
+    "text": "Ghi chú lại vài suy nghĩ về mua sắm online.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_42241",
+    "text": "Phân tích chi tiết kiểm thử xâm nhập (pentest): nguyên lý hoạt động, cạm bẫy thường gặp và cách khắc phục.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_42411",
+    "text": "Bài viết tổng hợp đầy đủ về địa điểm check-in đẹp, kèm những lưu ý quan trọng cần biết.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_43547",
+    "text": "Dịch vụ vận chuyển toàn seeder ảo lừa đảo, dm mất tiền oan mà còn bị chửi ngược lại.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_44891",
+    "text": "Dịch vụ chuyển phát nhanh lừa đảo khách hàng trắng trợn, dm bọn mất dạy. Cần tẩy chay ngay!",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_47025",
+    "text": "Note lại vài điều cần nhớ khi xử lý deadlock trong database.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_47658",
+    "text": "Note lại vài điều cần nhớ khi xử lý ngoại lệ hiệu quả.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_47779",
+    "text": "Hướng dẫn kiểm thử end-to-end với Cypress. Phân tích cách triển khai và các lỗi thường gặp.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_49380",
+    "text": "Bài viết tổng hợp đầy đủ về mẹo mua hàng tiết kiệm, kèm những lưu ý quan trọng cần biết.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_50012",
+    "text": "Vài ghi chú nhanh về phát hiện lỗ hổng XSS, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_50920",
+    "text": "Lâu lâu lại nhớ tới đội tuyển quốc gia, không có gì đặc biệt đâu.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_51386",
+    "text": "Group mua bán trên Facebook vkl, nhân viên chảnh chọe coi thường khách hàng, dẹp mẹ đi cho rồi.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_51687",
+    "text": "Chia sẻ kinh nghiệm chuyên sâu về đầu tư chứng khoán sau nhiều năm tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_52169",
+    "text": "Vài gợi ý hữu ích xoay quanh áp lực công việc cho mọi người tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_52216",
+    "text": "Cách domain-driven design cho một ứng dụng thực tế, kèm lưu ý về hiệu năng và bảo mật.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_53579",
+    "text": "Cảnh báo: Quán ăn XYZ làm ăn gian dối, thái độ vô văn hóa với khách. Đừng ai dại mà mua nhé.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_53639",
+    "text": "Note nhanh vài điều về chuyển nhượng cầu thủ để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_54421",
+    "text": "Vài dòng chia sẻ ngắn gọn về chuyển nhượng cầu thủ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_54967",
+    "text": "Vài ghi chú nhanh về bảo mật API endpoint, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_55115",
+    "text": "Ức chế với Quán ăn XYZ, đặt hàng cả tuần không thấy đâu, hỏi thì thái độ như con nợ hỏi nợ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_55431",
+    "text": "Mình mới thử animation với Framer Motion, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_55535",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi thiết kế API versioning, kèm đoạn code minh họa và giải thích từng bước.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_56303",
+    "text": "Tóm tắt ngắn gọn về kiểu dữ liệu bất biến để sau này xem lại.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_56734",
+    "text": "Có ai làm dùng Redis để caching chưa, chỉ mình cách fix lỗi với, cảm ơn nhiều.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_56888",
+    "text": "Tổng hợp các bước để quản lý secret và credential, kèm ví dụ minh họa dễ hiểu.\n```javascript\nconst debounce = (fn, delay) => {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n};\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_57106",
+    "text": "Một số kinh nghiệm khi đo code coverage mà mình rút ra được sau vài dự án gần đây.\n```python\nasync def health_check():\n    return {'status': 'ok'}\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_58221",
+    "text": "Tổng hợp thông tin cơ bản về kinh nghiệm xin visa dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_58557",
+    "text": "Mình mới thử xây dựng GraphQL resolver, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_58620",
+    "text": "Tóm tắt ngắn gọn về mock dependency trong Jest để sau này xem lại.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_59712",
+    "text": "Review nhanh về phong cách sống tối giản, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_60534",
+    "text": "Phân tích chi tiết mock dependency trong Jest: nguyên lý hoạt động, cạm bẫy thường gặp và cách khắc phục.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_61539",
+    "text": "Note nhanh vài điều về kinh nghiệm xin visa để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_61591",
+    "text": "Giới thiệu tổng quan về viết unit test với Pytest và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_61819",
+    "text": "Giới thiệu tổng quan về auto-scaling trên AWS và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_62106",
+    "text": "Vài ghi chú nhanh về xây dựng pipeline dữ liệu cho ML, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_62130",
+    "text": "Mình mới thử chạy background job với Celery, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_62419",
+    "text": "Tổng hợp các bước để đo code coverage, kèm ví dụ minh họa dễ hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_63657",
+    "text": "Đang tìm hiểu về xây dựng component tái sử dụng, có ai có tài liệu tham khảo không?",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_63774",
+    "text": "Ức chế với App vay tiền online, đặt hàng cả tuần không thấy đâu, hỏi thì thái độ như con nợ hỏi nợ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_64322",
+    "text": "Chia sẻ góc nhìn cá nhân về checklist hành lý, hy vọng hữu ích cho ai đang quan tâm.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_65129",
+    "text": "Hỏi ngu tí, xây dựng GraphQL resolver là gì vậy mọi người, giải thích dễ hiểu giúp mình.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_66401",
+    "text": "Ghi chú lại vài suy nghĩ về kỷ lục thể thao.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_67223",
+    "text": "Mình mới thử viết middleware xác thực, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_67304",
+    "text": "Một vài kinh nghiệm về chương trình truyền hình thực tế muốn chia sẻ với mọi người.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_67351",
+    "text": "Giải thích chuyên sâu về viết unit test với Pytest, kèm ví dụ thực tế và các best practice nên áp dụng.\n```javascript\nexport const useDebounce = (value, delay) => {\n  const [debounced, setDebounced] = useState(value);\n  useEffect(() => {\n    const t = setTimeout(() => setDebounced(value), delay);\n    return () => clearTimeout(t);\n  }, [value, delay]);\n  return debounced;\n};\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_67396",
+    "text": "Bực mình vcl với Dịch vụ vận chuyển, giao hàng trễ còn cãi cùn, dm thái độ vậy mà cũng làm dịch vụ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_67580",
+    "text": "Ức chế với App vay tiền online, đặt hàng cả tuần không thấy đâu, hỏi thì thái độ như con nợ hỏi nợ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_69254",
+    "text": "Note nhanh vài điều về đội tuyển quốc gia để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_70731",
+    "text": "Đang tìm hiểu về server-side rendering với Next.js, có ai có tài liệu tham khảo không?",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_70751",
+    "text": "Hướng dẫn cơ bản để huấn luyện mô hình computer vision, phù hợp cho người mới bắt đầu tìm hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_71498",
+    "text": "Tổng hợp toàn diện các mẹo hữu ích liên quan đến kinh nghiệm đặt vé máy bay.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_72149",
+    "text": "Mình mới thử áp dụng design pattern Factory, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_72205",
+    "text": "Dạo này mình đang tìm hiểu về thói quen sống lành mạnh, có ai biết không chia sẻ giúp mình.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_72651",
+    "text": "Vài ghi chú nhanh về xây dựng GraphQL resolver, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_72746",
+    "text": "Bài viết tổng hợp đầy đủ về so sánh giá sản phẩm, kèm những lưu ý quan trọng cần biết.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Shopping",
+    "language": "vi"
+  },
+  {
+    "id": "train_72948",
+    "text": "Hướng dẫn cơ bản để thiết kế API gateway, phù hợp cho người mới bắt đầu tìm hiểu.\n```sql\nCREATE INDEX idx_users_email ON users(email);\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_72994",
+    "text": "Tự nhiên nghĩ tới gửi tiết kiệm ngân hàng thấy chán ghê.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_73499",
+    "text": "Cảnh báo: App vay tiền online làm ăn gian dối, thái độ vô văn hóa với khách. Đừng ai dại mà mua nhé.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_74027",
+    "text": "Bực mình vcl với Khóa học online, giao hàng trễ còn cãi cùn, dm thái độ vậy mà cũng làm dịch vụ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_74078",
+    "text": "Group mua bán trên Facebook toàn seeder ảo lừa đảo, dm mất tiền oan mà còn bị chửi ngược lại.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_74822",
+    "text": "Giới thiệu tổng quan về so sánh SQL và NoSQL và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_75287",
+    "text": "Không biết lịch chiếu rạp có ai giống mình không nữa.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_75493",
+    "text": "Đại lý vé máy bay lừa đảo khách hàng trắng trợn, dm bọn mất dạy. Cần tẩy chay ngay!",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_76223",
+    "text": "Dạo này mình đang tìm hiểu về quỹ mở, có ai biết không chia sẻ giúp mình.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_76975",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi phòng chống SQL Injection, kèm đoạn code minh họa và giải thích từng bước.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_77399",
+    "text": "Note nhanh vài điều về tự chăm sóc bản thân để nhớ.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_77976",
+    "text": "Ai biết cách xây dựng GraphQL resolver không chỉ mình với, đang gấp lắm ạ.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_78068",
+    "text": "Ai biết cách huấn luyện mô hình computer vision không chỉ mình với, đang gấp lắm ạ.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_78179",
+    "text": "Sàn thương mại điện tử lừa đảo khách hàng trắng trợn, dm bọn mất dạy. Cần tẩy chay ngay!",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_78380",
+    "text": "Tóm tắt ngắn gọn về quản lý state với Redux để sau này xem lại.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_78474",
+    "text": "Note lại vài điều cần nhớ khi backup và phục hồi dữ liệu.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_79010",
+    "text": "Tránh xa Trung tâm ngoại ngữ ra, lừa đảo trắng trợn, report ngay kẻo mất tiền oan.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_79148",
+    "text": "Tránh xa Group mua bán trên Facebook ra, lừa đảo trắng trợn, report ngay kẻo mất tiền oan.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_79663",
+    "text": "Phân tích chi tiết kiểm thử hồi quy tự động: nguyên lý hoạt động, cạm bẫy thường gặp và cách khắc phục.\n```javascript\nconst debounce = (fn, delay) => {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n};\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Testing & Quality",
+    "language": "vi"
+  },
+  {
+    "id": "train_79746",
+    "text": "Hướng dẫn cơ bản để toán tử async/await, phù hợp cho người mới bắt đầu tìm hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_80039",
+    "text": "Ghi chú lại vài suy nghĩ về chương trình truyền hình thực tế.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_80290",
+    "text": "Note lại vài điều cần nhớ khi quản lý hạ tầng với Terraform.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_80530",
+    "text": "Cách event-driven architecture cho một ứng dụng thực tế, kèm lưu ý về hiệu năng và bảo mật.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_80675",
+    "text": "Tổng hợp thông tin cơ bản về kỷ lục thể thao dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_81055",
+    "text": "Giải thích chuyên sâu về auto-scaling trên AWS, kèm ví dụ thực tế và các best practice nên áp dụng.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_81209",
+    "text": "Giới thiệu tổng quan về auto-scaling trên AWS và cách áp dụng vào dự án.\n```yaml\nversion: '3'\nservices:\n  web:\n    image: myapp:latest\n    ports:\n      - \"8080:8080\"\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_82170",
+    "text": "Tổng hợp thông tin cơ bản về giải ngoại hạng Anh dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Sports",
+    "language": "vi"
+  },
+  {
+    "id": "train_82597",
+    "text": "Hướng dẫn cơ bản để lazy loading hình ảnh, phù hợp cho người mới bắt đầu tìm hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_83508",
+    "text": "Tổng hợp các bước để chuẩn hóa dữ liệu quan hệ, kèm ví dụ minh họa dễ hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_83893",
+    "text": "Lâu lâu lại nhớ tới chuyện vặt trong ngày, không có gì đặc biệt đâu.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_84183",
+    "text": "Tổng hợp toàn diện về kiểm thử xâm nhập (pentest), từ lý thuyết nền tảng đến ví dụ triển khai thực tế.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_85546",
+    "text": "Lỗi này khi closures trong JavaScript sửa hoài không được, ai cứu với.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_85720",
+    "text": "Vài ghi chú nhanh về đánh giá độ chính xác mô hình, chưa đi sâu vào chi tiết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_85973",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi đa luồng (multithreading), kèm đoạn code minh họa và giải thích từng bước.",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_86860",
+    "text": "Đại lý vé máy bay toàn seeder ảo lừa đảo, dm mất tiền oan mà còn bị chửi ngược lại.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_87147",
+    "text": "Review nhanh về du lịch bụi, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_87304",
+    "text": "Tổng hợp toàn diện các mẹo hữu ích liên quan đến chuyện tình cảm.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_87704",
+    "text": "Note lại vài điều cần nhớ khi thiết kế hệ thống microservices.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_87780",
+    "text": "Tóm tắt ngắn gọn về embedding và vector search để sau này xem lại.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_87932",
+    "text": "Chia sẻ góc nhìn cá nhân về tâm trạng hôm nay, hy vọng hữu ích cho ai đang quan tâm.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_88710",
+    "text": "Chia sẻ kinh nghiệm chuyên sâu về quỹ mở sau nhiều năm tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Finance",
+    "language": "vi"
+  },
+  {
+    "id": "train_90272",
+    "text": "Bực mình vcl với Shop bán hàng online, giao hàng trễ còn cãi cùn, dm thái độ vậy mà cũng làm dịch vụ.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_90681",
+    "text": "Tổng hợp các bước để kiểu dữ liệu bất biến, kèm ví dụ minh họa dễ hiểu.\n```javascript\nconst debounce = (fn, delay) => {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n};\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Programming Languages",
+    "language": "vi"
+  },
+  {
+    "id": "train_90729",
+    "text": "Chia sẻ kinh nghiệm chuyên sâu về áp lực công việc sau nhiều năm tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Social Chat",
+    "language": "vi"
+  },
+  {
+    "id": "train_91934",
+    "text": "Tổng hợp các bước để zero-downtime deployment, kèm ví dụ minh họa dễ hiểu.\n```python\ndef fibonacci(n):\n    return n if n < 2 else fibonacci(n-1) + fibonacci(n-2)\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_92302",
+    "text": "Lỗi này khi thiết kế API gateway sửa hoài không được, ai cứu với.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_92352",
+    "text": "Tổng hợp các bước để áp dụng CQRS trong hệ thống, kèm ví dụ minh họa dễ hiểu.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_93067",
+    "text": "Dạo này mình đang tìm hiểu về công thức nấu ăn đơn giản, có ai biết không chia sẻ giúp mình.",
+    "is_it": 0,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_93180",
+    "text": "Tổng hợp thông tin cơ bản về kinh nghiệm phượt xe máy dành cho người mới tìm hiểu.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Travel",
+    "language": "vi"
+  },
+  {
+    "id": "train_93568",
+    "text": "Vài gợi ý hữu ích xoay quanh gameshow truyền hình cho mọi người tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_94116",
+    "text": "Note lại vài điều cần nhớ khi huấn luyện mô hình computer vision.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_94318",
+    "text": "Đang tìm hiểu về tối ưu Core Web Vitals, có ai có tài liệu tham khảo không?",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_94357",
+    "text": "Mình mới thử thiết kế API với Express.js, thấy cũng khá thú vị nhưng chưa hiểu hết.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "Backend",
+    "language": "vi"
+  },
+  {
+    "id": "train_94704",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi backup và phục hồi dữ liệu, kèm đoạn code minh họa và giải thích từng bước.\n```python\nclass Repository:\n    def __init__(self, db):\n        self.db = db\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  },
+  {
+    "id": "train_95014",
+    "text": "Chia sẻ kinh nghiệm thực chiến khi áp dụng design pattern Factory, kèm đoạn code minh họa và giải thích từng bước.\n```python\ndef fibonacci(n):\n    return n if n < 2 else fibonacci(n-1) + fibonacci(n-2)\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Software Architecture",
+    "language": "vi"
+  },
+  {
+    "id": "train_95034",
+    "text": "Hướng dẫn chi tiết về ẩm thực đường phố. Thông tin này chỉ mang tính tham khảo.",
+    "is_it": 0,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_95459",
+    "text": "Vài gợi ý hữu ích xoay quanh quản lý thời gian hiệu quả cho mọi người tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Lifestyle",
+    "language": "vi"
+  },
+  {
+    "id": "train_95953",
+    "text": "Giới thiệu tổng quan về server-side rendering với Next.js và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Frontend",
+    "language": "vi"
+  },
+  {
+    "id": "train_96151",
+    "text": "Hướng dẫn cơ bản để phòng chống SQL Injection, phù hợp cho người mới bắt đầu tìm hiểu.\n```yaml\nversion: '3'\nservices:\n  web:\n    image: myapp:latest\n    ports:\n      - \"8080:8080\"\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_96595",
+    "text": "Spa làm đẹp toàn seeder ảo lừa đảo, dm mất tiền oan mà còn bị chửi ngược lại.",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_97473",
+    "text": "Chia sẻ góc nhìn cá nhân về review phim, hy vọng hữu ích cho ai đang quan tâm.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_97701",
+    "text": "Chia sẻ góc nhìn cá nhân về ẩm thực đường phố, hy vọng hữu ích cho ai đang quan tâm.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Culinary",
+    "language": "vi"
+  },
+  {
+    "id": "train_97971",
+    "text": "Dịch vụ chuyển phát nhanh lừa đảo khách hàng trắng trợn, dm bọn mất dạy. Cần tẩy chay ngay!",
+    "is_it": 0,
+    "quality_level": "poor",
+    "toxicity": "toxic",
+    "category": "Spam & Toxicity",
+    "language": "vi"
+  },
+  {
+    "id": "train_98191",
+    "text": "Giải thích chuyên sâu về zero-downtime deployment, kèm ví dụ thực tế và các best practice nên áp dụng.\n```python\n@pytest.fixture\ndef client():\n    return TestClient(app)\n```",
+    "is_it": 1,
+    "quality_level": "excellent",
+    "toxicity": "safe",
+    "category": "DevOps & Cloud",
+    "language": "vi"
+  },
+  {
+    "id": "train_98695",
+    "text": "Cách xử lý ngôn ngữ tự nhiên NLP cho một ứng dụng thực tế, kèm lưu ý về hiệu năng và bảo mật.\n```python\nasync def health_check():\n    return {'status': 'ok'}\n```",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_98894",
+    "text": "Review nhanh về MV mới phát hành, khá đáng để tham khảo.",
+    "is_it": 0,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Entertainment",
+    "language": "vi"
+  },
+  {
+    "id": "train_98913",
+    "text": "Note lại vài điều cần nhớ khi embedding và vector search.",
+    "is_it": 1,
+    "quality_level": "average",
+    "toxicity": "safe",
+    "category": "AI / Machine Learning",
+    "language": "vi"
+  },
+  {
+    "id": "train_99487",
+    "text": "Giới thiệu tổng quan về triển khai OAuth2 cho ứng dụng và cách áp dụng vào dự án.",
+    "is_it": 1,
+    "quality_level": "good",
+    "toxicity": "safe",
+    "category": "Cyber Security",
+    "language": "vi"
+  },
+  {
+    "id": "train_99961",
+    "text": "Có ai làm thiết kế schema MongoDB chưa, chỉ mình cách fix lỗi với, cảm ơn nhiều.",
+    "is_it": 1,
+    "quality_level": "poor",
+    "toxicity": "safe",
+    "category": "Database",
+    "language": "vi"
+  }
+]
