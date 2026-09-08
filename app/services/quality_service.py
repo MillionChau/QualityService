@@ -14,6 +14,9 @@ from app.schemas.quality import QualityResult
 from app.core.logging import logger
 
 
+from app.clients.mongo_client import mongo_client
+
+
 class QualityService:
     def __init__(self):
         self.automaton = DictionaryAutomaton()
@@ -49,11 +52,22 @@ class QualityService:
         )
         logger.info("QualityService initialization complete.")
 
-    def analyze_article(self, content: str) -> QualityResult:
+    async def analyze_article(self, content: str) -> QualityResult:
         if not self.pipeline:
             self.initialize()
-        return self.pipeline.process(content)
+        result = self.pipeline.process(content)
+
+        # Trích xuất và lưu vào MongoDB Atlas ('quality_results')
+        if mongo_client.db is not None:
+            try:
+                await mongo_client.db["quality_results"].insert_one(result.model_dump())
+                logger.info("Successfully saved QualityResult into MongoDB Atlas ('quality_results' collection).")
+            except Exception as e:
+                logger.warning(f"Failed to save QualityResult to MongoDB Atlas: {e}")
+
+        return result
 
 
 # Global Service Singleton
 quality_service = QualityService()
+

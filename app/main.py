@@ -7,12 +7,18 @@ from app.services.quality_service import quality_service
 from app.api.routes import analyze, health
 
 
+from app.clients.mongo_client import mongo_client
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Initializing Quality Service application startup...")
     quality_service.initialize()
+    mongo_client.connect()
     yield
+    mongo_client.close()
     logger.info("Shutting down Quality Service...")
+
 
 app = FastAPI(
     title="DevRadar Quality Service API",
