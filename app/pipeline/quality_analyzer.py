@@ -1,6 +1,5 @@
 from typing import List, Dict, Any
 from app.rules.base import BaseRule
-from app.rules.length import LengthRule
 from app.rules.spam import SpamRule
 from app.rules.emoji import EmojiRule
 from app.rules.structure import StructureRule
@@ -11,7 +10,6 @@ class QualityAnalyzerEngine:
     def __init__(self, rules: List[BaseRule] = None):
         if rules is None:
             self.rules = [
-                LengthRule(),
                 SpamRule(),
                 EmojiRule(),
                 StructureRule(),

@@ -79,7 +79,11 @@ class QualityPipeline:
         elapsed_ms = round((time.time() - start_time) * 1000, 2)
         logger.info(f"Quality Pipeline completed in {elapsed_ms}ms. Final Score: {score} ({level})")
 
+        # Trạng thái Hợp lệ: Chỉ True khi (is_it == True) VÀ (toxicity == 'safe')
+        is_valid = classification_res["is_it"] and (classification_res["toxicity"]["label"] == "safe")
+
         return QualityResult(
+            is_valid=is_valid,
             is_it=classification_res["is_it"],
             it_probability=classification_res["it_probability"],
             toxicity=ToxicityResult(**classification_res["toxicity"]),
