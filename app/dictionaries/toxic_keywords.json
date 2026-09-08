@@ -1,0 +1,16 @@
+{
+  "keywords": [
+    "độc hại", "lừa đảo", "scam", "chửi", "xúc phạm", "spam", "hack", "crack",
+    "ngu", "đồ ngu", "ngu học", "óc chó", "súc vật", "chó đẻ", "mất dạy",
+    "mẹ kiếp", "bố láo", "khùng", "điên", "hãm", "hãm lồn", "rác rưởi", "phốt",
+    "tẩy chay", "bắt nạt", "văng tục", "chửi thề", "gian dối", "gian lận", "làm ăn gian dối",
+    "vô văn hóa", "vô học", "lừa gạt", "bịp bợm", "thất đức", "đừng ai dại",
+    "đồ khốn", "khốn nạn", "khốn kiếp", "khốn", "biến đi", "cút đi", "cút",
+    "thằng", "bực mình", "bực cả mình", "ngu ngốc", "lừa tiền"
+  ],
+  "slang_patterns": [
+    "\\bdm\\b", "\\bdkm\\b", "\\bvkl\\b", "\\bvl\\b", "\\bcl\\b", "\\bcmm\\b",
+    "\\bcon cặc\\b", "\\bcặc\\b", "\\blồn\\b", "\\bbuồi\\b", "\\bđít\\b", "\\bđái\\b", "\\bỉa\\b",
+    "\\bđồ khốn\\b", "\\bkhốn\\b", "\\bbiến đi\\b", "\\bmẹ kiếp\\b", "\\bsúc vật\\b", "\\bóc chó\\b"
+  ]
+}

@@ -25,9 +25,9 @@ class QualityScorer:
         toxic_prob = toxicity.get("probability", 0.0)
 
         if toxic_label == "toxic":
-            safety_score = max(0.0, (1.0 - toxic_prob) * 100.0)
+            safety_score = 0.0
         elif toxic_label == "suspicious":
-            safety_score = 60.0
+            safety_score = 30.0
         else:
             safety_score = 100.0
 
@@ -61,9 +61,22 @@ class QualityScorer:
             w_qual * content_quality_score
         )
 
-        final_score = int(round(max(0.0, min(100.0, raw_score))))
+        is_it = classification_result.get("is_it", True)
 
-        # 5. Phân loại Quality Level
+        # 5. Quy tắc đánh giá nghiêm ngặt cho DevRadar:
+        # CHỈ bài viết (IT == True) VÀ (Toxicity == "safe") mới PASS (Hợp lệ).
+        # Tất cả các trường hợp khác (Non-IT hoặc Toxic/Suspicious) đều FAIL (Ép về Poor / Low Score).
+        if toxic_label == "toxic":
+            final_score = int(round(min(raw_score * 0.1, 15.0)))
+        elif toxic_label == "suspicious":
+            final_score = int(round(min(raw_score * 0.3, 35.0)))
+        elif not is_it:
+            # Bài viết không thuộc IT (Non-IT): Đánh FAIL ép về điểm Poor (Tối đa 25 điểm)
+            final_score = int(round(min(raw_score * 0.25, 25.0)))
+        else:
+            final_score = int(round(max(0.0, min(100.0, raw_score))))
+
+        # Phân loại Quality Level
         if final_score >= 90:
             level = "excellent"
         elif final_score >= 75:
