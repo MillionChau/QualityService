@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.logging import logger
 from app.services.quality_service import quality_service
-from app.api.routes import analyze, health
+from app.api.routes import analyze, health, ai_assistant
+from app.core.request_logging import RequestLoggingMiddleware
 
 
 from app.clients.mongo_client import mongo_client
@@ -36,9 +37,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Request logging: thêm sau CORS => chạy ngoài cùng, log mọi request kèm thời gian phản hồi
+app.add_middleware(RequestLoggingMiddleware)
+
 # Include Routers
 app.include_router(analyze.router)
 app.include_router(health.router)
+app.include_router(ai_assistant.router)
 
 
 @app.get("/", include_in_schema=False)
