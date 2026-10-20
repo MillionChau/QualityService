@@ -42,6 +42,13 @@ class Settings(BaseSettings):
     WEIGHT_SAFETY: float = 0.20
     WEIGHT_CONTENT_QUALITY: float = 0.15
 
+    # External LLM / UnoRouter Gateway Config
+    EXTERNAL_AI_ENABLED: bool = True
+    AI_API_KEY: str = ""
+    AI_BASE_URL: str = "https://api.unorouter.com/v1"
+    AI_MODEL: str = "qwen2.5-coder-32b:free"
+    AI_TIMEOUT_SECONDS: float = 12.0
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
