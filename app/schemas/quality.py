@@ -17,6 +17,7 @@ class AnalyzeRequest(BaseModel):
     content: str = Field(..., description="Nội dung bài viết cần phân tích và chấm điểm", min_length=1)
     content_id: Optional[str] = Field(None, description="Mã bài viết (nếu có)")
     user_id: Optional[str] = Field(None, description="Mã tác giả/người dùng (nếu có)")
+    content_type: Optional[str] = Field("post", description="Loại nội dung: post hoặc comment")
 
 
 class RelabelRequest(BaseModel):
@@ -62,6 +63,9 @@ class QualityResult(BaseModel):
     # --- Extended Core AI/ML Fields ---
     content_id: Optional[str] = Field(None, description="ID bài viết")
     user_id: Optional[str] = Field(None, description="ID tác giả")
+    ai_verified: bool = Field(False, description="Đã được thẩm định qua mô hình LLM")
+    llm_model: Optional[str] = Field(None, description="Tên mô hình LLM đã dùng để kiểm tra")
+    moderation_reason: Optional[str] = Field(None, description="Lý do chi tiết từ AI kiểm duyệt")
 
     it_relevance: Optional[ITRelevanceResult] = Field(None, description="Phân loại chi tiết IT Relevance")
     domain: Optional[ITDomainResult] = Field(None, description="Phân loại chuyên ngành IT cụ thể")
