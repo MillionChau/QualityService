@@ -28,7 +28,7 @@ class QualityPipeline:
         self.analyzer = analyzer
         self.scorer = scorer
 
-    def process(self, content: str) -> QualityResult:
+    def process(self, content: str, content_type: str = "post") -> QualityResult:
         start_time = time.time()
         logger.info("Starting Quality Pipeline execution...")
 
@@ -73,14 +73,20 @@ class QualityPipeline:
         score, level = self.scorer.calculate_score(
             classification_res,
             analysis_res,
-            statistics.model_dump()
+            statistics.model_dump(),
+            content_type=content_type
         )
 
         elapsed_ms = round((time.time() - start_time) * 1000, 2)
         logger.info(f"Quality Pipeline completed in {elapsed_ms}ms. Final Score: {score} ({level})")
 
-        # Trạng thái Hợp lệ: Chỉ True khi (is_it == True) VÀ (toxicity == 'safe')
-        is_valid = classification_res["is_it"] and (classification_res["toxicity"]["label"] == "safe")
+        # Trạng thái Hợp lệ:
+        # Đối với bài viết (post): Bắt buộc is_it == True VÀ toxicity == 'safe'
+        # Đối với bình luận (comment): Chỉ bị chặn khi dính toxic/suspicious
+        if content_type.lower() == "comment":
+            is_valid = (classification_res["toxicity"]["label"] == "safe")
+        else:
+            is_valid = classification_res["is_it"] and (classification_res["toxicity"]["label"] == "safe")
 
         return QualityResult(
             is_valid=is_valid,

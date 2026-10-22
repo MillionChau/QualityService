@@ -9,6 +9,7 @@ from app.core.request_logging import RequestLoggingMiddleware
 
 
 from app.clients.mongo_client import mongo_client
+from app.services.event_consumer import quality_event_consumer
 
 
 @asynccontextmanager
@@ -16,7 +17,9 @@ async def lifespan(app: FastAPI):
     logger.info("Initializing Quality Service application startup...")
     quality_service.initialize()
     mongo_client.connect()
+    quality_event_consumer.start()
     yield
+    quality_event_consumer.stop()
     mongo_client.close()
     logger.info("Shutting down Quality Service...")
 

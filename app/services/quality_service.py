@@ -58,16 +58,23 @@ class QualityService:
     async def analyze_article(self, content: str, content_type: str = "post") -> QualityResult:
         if not self.pipeline:
             self.initialize()
-        result = self.pipeline.process(content)
+        result = self.pipeline.process(content, content_type=content_type)
 
         # Với bình luận (comment), tiêu chí hợp lệ chủ yếu là an toàn (không cần là bài viết IT dài)
         if content_type.lower() == "comment":
             result.is_valid = (result.toxicity.label == "safe")
 
         # Thẩm định chéo an toàn nội dung bằng External LLM (UnoRouter) nếu có cấu hình
-        # Tối ưu hóa: Nếu pipeline local đã phân loại chắc chắn là 'toxic', không cần chờ LLM (tránh độ trễ 5-6s)
-        # Chỉ gọi External LLM khi nội dung đang là 'safe' hoặc 'suspicious' để bắt các trường hợp tinh vi
-        if llm_client.is_available() and result.toxicity.label != "toxic":
+        # Tối ưu hóa hiệu năng & quota:
+        # 1. Nếu pipeline local đã phân loại chắc chắn là 'toxic', không cần chờ LLM (tránh độ trễ).
+        # 2. Nếu là bài viết (post) mà local model đã xác định KHÔNG PHẢI IT (is_it == False) hoặc điểm quá thấp (< 35),
+        #    bài viết đã không hợp lệ, KHÔNG CẦN gọi External LLM (tiết kiệm quota 1 req/min và tránh nguy cơ timeout).
+        # 3. Chỉ gọi External LLM khi cần thẩm định an toàn chéo cho nội dung nghi ngờ hoặc đạt chuẩn IT ban đầu.
+        should_call_llm = (
+            llm_client.is_available()
+            and result.toxicity.label == "suspicious"
+        )
+        if should_call_llm:
             try:
                 if content_type.lower() == "comment":
                     system_prompt = (

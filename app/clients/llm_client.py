@@ -15,7 +15,7 @@ class LLMClient:
         self.base_url = settings.AI_BASE_URL.rstrip("/")
         self.api_key = settings.AI_API_KEY
         self.model = settings.AI_MODEL
-        self.timeout = settings.AI_TIMEOUT_SECONDS
+        self.timeout = min(settings.AI_TIMEOUT_SECONDS, 3.5)
         self.enabled = settings.EXTERNAL_AI_ENABLED
 
     def is_available(self) -> bool:

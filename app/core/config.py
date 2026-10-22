@@ -47,7 +47,19 @@ class Settings(BaseSettings):
     AI_API_KEY: str = ""
     AI_BASE_URL: str = "https://api.unorouter.com/v1"
     AI_MODEL: str = "qwen2.5-coder-32b:free"
-    AI_TIMEOUT_SECONDS: float = 12.0
+    AI_TIMEOUT_SECONDS: float = 4.0
+
+    # RabbitMQ Config
+    RABBITMQ_HOST: str = os.getenv("RabbitMQ__HostName", os.getenv("RABBITMQ_HOST", "localhost"))
+    RABBITMQ_PORT: int = int(os.getenv("RabbitMQ__Port", os.getenv("RABBITMQ_PORT", "5672")))
+    RABBITMQ_USER: str = os.getenv("RabbitMQ__UserName", os.getenv("RABBITMQ_USER", "devradar"))
+    RABBITMQ_PASSWORD: str = os.getenv("RabbitMQ__Password", os.getenv("RABBITMQ_PASSWORD", "devradar2026"))
+    RABBITMQ_EXCHANGE: str = "devradar.events"
+    RABBITMQ_QUEUE_QUALITY: str = "quality.post.created"
+
+    # Redis Config
+    REDIS_HOST: str = os.getenv("ConnectionStrings__Redis", os.getenv("REDIS_HOST", "localhost:6379")).split(":")[0]
+    REDIS_PORT: int = int(os.getenv("ConnectionStrings__Redis", os.getenv("REDIS_HOST", "localhost:6379")).split(":")[1]) if ":" in os.getenv("ConnectionStrings__Redis", os.getenv("REDIS_HOST", "localhost:6379")) else 6379
 
     model_config = SettingsConfigDict(
         env_file=".env",
