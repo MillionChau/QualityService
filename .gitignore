@@ -169,3 +169,8 @@ cython_debug/
 # DevRadar specific
 crawler.db
 crawled_data.json
+
+# Documentation
+*.md
+!README.md
+

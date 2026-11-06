@@ -10,7 +10,8 @@ class QualityScorer:
         self,
         classification_result: Dict[str, Any],
         analyzer_result: Dict[str, Any],
-        statistics: Dict[str, Any]
+        statistics: Dict[str, Any],
+        content_type: str = "post"
     ) -> Tuple[int, str]:
         """
         Tính điểm Quality Score (0-100) và xếp loại Quality Level.
@@ -63,18 +64,35 @@ class QualityScorer:
 
         is_it = classification_result.get("is_it", True)
 
-        # 5. Quy tắc đánh giá nghiêm ngặt cho DevRadar:
-        # CHỈ bài viết (IT == True) VÀ (Toxicity == "safe") mới PASS (Hợp lệ).
-        # Tất cả các trường hợp khác (Non-IT hoặc Toxic/Suspicious) đều FAIL (Ép về Poor / Low Score).
-        if toxic_label == "toxic":
-            final_score = int(round(min(raw_score * 0.1, 15.0)))
-        elif toxic_label == "suspicious":
-            final_score = int(round(min(raw_score * 0.3, 35.0)))
-        elif not is_it:
-            # Bài viết không thuộc IT (Non-IT): Đánh FAIL ép về điểm Poor (Tối đa 25 điểm)
-            final_score = int(round(min(raw_score * 0.25, 25.0)))
+        # 5. Phân biệt tính điểm giữa Bài viết (post) và Bình luận (comment):
+        if content_type.lower() == "comment":
+            # ĐỐI VỚI BÌNH LUẬN (COMMENT):
+            # - Chỉ bị chặn khi dính toxic/suspicious.
+            # - Vẫn tính điểm đóng góp nếu có tính chất IT (chia sẻ kỹ thuật, giải pháp, code snippet, IT keywords).
+            if toxic_label == "toxic":
+                final_score = int(round(min(raw_score * 0.1, 10.0)))
+            elif toxic_label == "suspicious":
+                final_score = int(round(min(raw_score * 0.3, 25.0)))
+            else:
+                # Bình luận an toàn (safe):
+                if is_it:
+                    # Có tính chất IT: Tính điểm đóng góp chất lượng cao (bonus thêm điểm IT contribution)
+                    final_score = int(round(max(70.0, min(100.0, raw_score + (relevance_score * 0.2)))))
+                else:
+                    # Giao tiếp thông thường (cảm ơn, khen ngợi, hỏi han xã giao):
+                    # Không bị chặn (is_valid = True), nhận điểm đóng góp giao tiếp cơ bản (50 điểm)
+                    final_score = 50
         else:
-            final_score = int(round(max(0.0, min(100.0, raw_score))))
+            # ĐỐI VỚI BÀI VIẾT (POST): Bắt buộc IT == True và Toxicity == safe
+            if toxic_label == "toxic":
+                final_score = int(round(min(raw_score * 0.1, 15.0)))
+            elif toxic_label == "suspicious":
+                final_score = int(round(min(raw_score * 0.3, 35.0)))
+            elif not is_it:
+                # Bài viết không thuộc IT (Non-IT): Đánh FAIL ép về điểm Poor (Tối đa 25 điểm)
+                final_score = int(round(min(raw_score * 0.25, 25.0)))
+            else:
+                final_score = int(round(max(0.0, min(100.0, raw_score))))
 
         # Phân loại Quality Level
         if final_score >= 90:

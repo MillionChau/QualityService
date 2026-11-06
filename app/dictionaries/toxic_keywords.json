@@ -11,6 +11,7 @@
   "slang_patterns": [
     "\\bdm\\b", "\\bdkm\\b", "\\bvkl\\b", "\\bvl\\b", "\\bcl\\b", "\\bcmm\\b",
     "\\bcon cặc\\b", "\\bcặc\\b", "\\blồn\\b", "\\bbuồi\\b", "\\bđít\\b", "\\bđái\\b", "\\bỉa\\b",
-    "\\bđồ khốn\\b", "\\bkhốn\\b", "\\bbiến đi\\b", "\\bmẹ kiếp\\b", "\\bsúc vật\\b", "\\bóc chó\\b"
+    "\\bđồ khốn\\b", "\\bkhốn\\b", "\\bbiến đi\\b", "\\bmẹ kiếp\\b", "\\bsúc vật\\b", "\\bóc chó\\b",
+    "\\bcái đb\\b", "\\bcái db\\b", "\\bđb\\b"
   ]
 }
