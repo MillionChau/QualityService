@@ -20,6 +20,10 @@ class AnalyzeRequest(BaseModel):
     content_type: Optional[str] = Field("post", description="Loại nội dung: post hoặc comment")
 
 
+class BatchAnalyzeRequest(BaseModel):
+    items: List[AnalyzeRequest] = Field(default_factory=list, description="Danh sách các bài viết cần phân tích đồng thời")
+
+
 class RelabelRequest(BaseModel):
     content_id: str = Field(..., description="Mã bài viết/kết quả phân tích cần sửa nhãn")
     content: Optional[str] = Field(None, description="Nội dung bài viết (nếu tạo mới hoặc cập nhật)")
